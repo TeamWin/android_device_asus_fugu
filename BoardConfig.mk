@@ -162,3 +162,12 @@ BOARD_SEPOLICY_DIRS += device/asus/fugu/sepolicy
 
 # Recipes to generate prebuilts
 -include device/intel/common/external/external.mk
+
+#TWRP
+TW_THEME := landscape_hdpi
+RECOVERY_SDCARD_ON_DATA := true
+TW_NO_SCREEN_TIMEOUT := true
+TW_NO_USB_STORAGE := true
+TW_BRIGHTNESS_PATH := "/brightness"
+# Include crypto for adopted storage
+TW_INCLUDE_CRYPTO := true

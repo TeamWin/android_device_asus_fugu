@@ -30,7 +30,7 @@ endif
 ifneq ($(TARGET_KERNEL_BUILT_FROM_SOURCE), true)
 # Use prebuilt kernel
 ifeq ($(TARGET_PREBUILT_KERNEL),)
-LOCAL_KERNEL := device/asus/fugu-kernel/bzImage
+LOCAL_KERNEL := device/asus/fugu/bzImage
 else
 LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
 endif
